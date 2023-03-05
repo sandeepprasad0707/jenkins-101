@@ -9,15 +9,13 @@ pipeline {
                 echo "Building.."
                 sh '''
                 echo "doing build stuff.."
-                '''
             }
         }
         stage('Test') {
             steps {
                 echo "Testing.."
                 sh '''
-                echo "doing test stuff..
-                '''
+                echo "doing test stuff.."
             }
         }
         stage('Deliver') {
@@ -25,7 +23,6 @@ pipeline {
                 echo 'Deliver....'
                 sh '''
                 echo "doing delivery stuff.."
-                '''
             }
         }
     }
