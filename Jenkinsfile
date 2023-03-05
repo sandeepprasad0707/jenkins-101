@@ -4,15 +4,6 @@ pipeline {
         pollSCM '* * * * *'
     }
     stages {
-        stage('Build') {
-            steps {
-                echo "Building.."
-                sh '''
-                cd myapp
-                python3-pip install -r requirements.txt
-                '''
-            }
-        }
         stage('Test') {
             steps {
                 echo "Testing.."
