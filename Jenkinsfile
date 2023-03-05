@@ -8,14 +8,16 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                echo "doing delivery stuff.."
+                echo "doing build stuff.."
+                '''
             }
         }
         stage('Test') {
             steps {
                 echo "Testing.."
                 sh '''
-                echo "doing delivery stuff.."
+                echo "doing test stuff..
+                '''
             }
         }
         stage('Deliver') {
